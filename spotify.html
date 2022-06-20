@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Spotify</title>
+    <style>
+        /* tag , class , universal */
+        /* CSK, CSK-Indian, All Cricketers */
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .nav{
+            width: 100%;
+            background-color: black;
+            height: 70px;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding-left: 15%;
+            padding-right: 15%;
+           justify-content: space-between;
+        }
+        .logo{
+           height: 70%;
+           display: flex;
+           align-items: center;
+        }
+        .logo-img{
+            height: 100%;
+            margin-right: 15px;
+        }
+
+        .nav-buttons{
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+        }
+        .nav-buttons p:hover{
+          color: green;
+          cursor: pointer;
+        }
+        .background{
+            width: 100%;
+            height: 400px;
+            background-image: url("images/background.webp");
+             display: flex;
+            align-items: flex-end; 
+        }
+        .main{
+            width: 50%;
+            margin-inline: auto;
+            /* To make any element vertically center :- align-items:center 
+             To make any element horizontally center :-margin-inline: auto;*/
+            display: flex;
+            justify-content: space-between;
+        }
+        .bg-img{
+            width: 200px;
+        }
+        .bg-text{
+            width: 60%;
+        }
+        .bg-text h1{
+            color: white;
+            margin-bottom: 30px;
+        }
+        .bg-text button{
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .song{
+            width: 70%;
+            height: 400px;
+            margin-inline: auto;
+            margin-top: 50px;
+
+        }
+        .song-h1{
+            text-align: center;
+        }
+        .card{
+            width: 23%;
+            display: block;
+            
+        }
+        .card-img{
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            display: block;
+            
+        }
+        .card-container{
+            display: flex;
+            margin: 20px;
+            
+            
+        }
+        .card-text{
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img class="logo-img" src="images/spotify.png" alt="">
+            <h2 class="logo-text">Spotify</h2>
+        </div>
+        <div class="nav-buttons">
+          <p>Premium</p>
+          <p>Support</p>
+          <p>Download </p>
+          <p>Signup</p>
+          <p>Login</p>
+        </div>
+    </div>
+    <div class="background">
+        <div class="main">
+            <img class="bg-img" src="images/Screenshot 2022-06-03 at 1.12.49 PM.png" alt="">
+            <div class="bg-text">
+                <h1>Play millions of songs and podcasts, for free</h1>
+                <button>GET SPOTIFY FREE</button>
+            </div>
+        </div>
+    </div>
+    <div class="song">
+        <h1 class="song-h1">Why Spotify?</h1>
+        <div class="card-container">
+            <div class="card">
+                <img class="card-img" src="images/logo-1.png" >
+                <h4 class="card-text">Play your favorites.</h4>
+                <p class="card-text">Listen to the songs you love, and discover new music and podcasts.</p>
+                </div>
+                <div class="card">
+                <img class="card-img" src="images/logo-2.png" alt="">
+                <h4 class="card-text">heart touching.</h4>
+                <p class="card-text">best of all, that you love to see.</p>
+              </div>
+              <div class="card">
+                <img class="card-img" src="images/logo-3.png" alt="">
+                <h4 class="card-text">popular .</h4>
+                <p class="card-text">Listen to the songs you love, and discover new music and podcasts.</p>
+                </div>
+                <div class="card">
+                <img class="card-img" src="images/logo-4.png" alt="">
+                <h4 class="card-text">superhits.</h4>
+                <p class="card-text">Listen to the indian superhit songs , and discover new in you.</p>
+
+            </div>
+           
+        </div>
+    </div>
+</body>
+</html>
+<!-- 1. Flex(Makes block items go side by side)
+2. align-items(Makes alignment in )
+3. justify-content
+4. border-radius -->
